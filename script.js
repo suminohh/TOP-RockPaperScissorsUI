@@ -1,7 +1,15 @@
-function computerPlay(hand)
+function computerPlay(computerSelection)
 {
- return hand[Math.floor(Math.random()*hand.length)];   
+ return computerSelection[Math.floor(Math.random()*computerSelection.length)];   
 }
-var hand = ['Rock', 'Paper', 'Scissors'];
+var compterSelection = ['Rock', 'Paper', 'Scissors'];
 
-console.log(computerPlay(hand));
+//console.log(computerPlay(hand)); 
+//console is used to test whether function works as intended 
+
+function playRound(playerSelection, computerSelection) {
+    var playerSelection = prompt("Enter 'Rock', 'Paper', or 'Scissors'", "");
+    if (playerSelection != null) {
+        return "You played " + playerSelection + " and the bot played " + computerSelection + "."
+    }
+}
