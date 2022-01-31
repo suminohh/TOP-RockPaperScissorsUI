@@ -9,7 +9,13 @@ var compterSelection = ['Rock', 'Paper', 'Scissors'];
 
 function playRound(playerSelection, computerSelection) {
     var playerSelection = prompt("Enter 'Rock', 'Paper', or 'Scissors'", "");
-    if (playerSelection != null) {
-        return "You played " + playerSelection + " and the bot played " + computerSelection + "."
+    if ((playerSelection != null) && (playerSelection == 'Rock' && computerSelection == 'Scissors' || playerSelection == 'Scissors' && computerSelection == 'Paper' || playerSelection == 'Paper' && computerSelection == 'Rock')) {
+        return "You win! " + playerSelection + " beats " + computerSelection + ".";
+    }    
+    else if ((playerSelection != null) && (playerSelection == 'Rock' && computerSelection == 'Paper' || playerSelection == 'Scissors' && computerSelection == 'Rock' || playerSelection == 'Paper' && computerSelection == 'Scissors')) {
+        return "Sorry, you lose! " + computerSelection + " beats " + playerSelection + ".";
+    }
+    else if ((playerSelection != null) && (playerSelection == 'Rock' && computerSelection == 'Rock' || playerSelection == 'Scissors' && computerSelection == 'Scissors' || playerSelection == 'Paper' && computerSelection == 'Paper')) {
+        return "It's a tie! You both played " + computerSelection + ".";
     }
 }
