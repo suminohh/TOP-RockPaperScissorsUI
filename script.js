@@ -14,11 +14,11 @@ function playRound(playerSelection, computerPlay) {
  
     if ((playerSelection == 'Rock' && computerSelection == 'Scissors') || (playerSelection == 'Scissors' && computerSelection == 'Paper') || (playerSelection == 'Paper' && computerSelection == 'Rock')) {
         playerScore++;
-        result = "You win! " + playerSelection + " beats " + computerSelection + ".";
+        result = "Yay! You win! " + playerSelection + " beats " + computerSelection + ".";
     }    
     else if ((playerSelection == 'Rock' && computerSelection == 'Paper') || (playerSelection == 'Scissors' && computerSelection == 'Rock') || (playerSelection == 'Paper' && computerSelection == 'Scissors')) {
         computerScore++;
-        result = "Sorry, you lose! " + computerSelection + " beats " + playerSelection + ".";
+        result = "You lost but please don't cry! " + computerSelection + " beats " + playerSelection + ".";
     }
     else if ((playerSelection == 'Rock' && computerSelection == 'Rock') || (playerSelection == 'Scissors' && computerSelection == 'Scissors') || (playerSelection == 'Paper' && computerSelection == 'Paper')) {
         result = "It's a tie! You both played " + computerSelection + ".";
@@ -40,10 +40,10 @@ function game() {
     } 
     else {
         if (playerScore > computerScore){
-            alert("Game over. You won! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
+            alert("Game over. You beat the computer! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
         }
         else if (playerScore < computerScore){
-            alert("Game over. The computer won! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
+            alert("Game over. Sorry mate. You lost. You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
         }
         else {
             alert("Game over. You tied!");
