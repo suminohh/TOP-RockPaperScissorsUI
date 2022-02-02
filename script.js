@@ -46,7 +46,7 @@ function game() {
             alert("Game over. The computer won! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
         }
         else {
-            alert("Game over. You tied!")
+            alert("Game over. You tied!");
         }
     }
 }
