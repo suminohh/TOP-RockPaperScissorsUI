@@ -39,7 +39,15 @@ function game() {
         game();
     } 
     else {
-        alert("Game over! You scored " + playerScore + " and the computer scored " + computerScore + ".");
+        if (playerScore > computerScore){
+            alert("Game over. You won! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
+        }
+        else if (playerScore < computerScore){
+            alert("Game over. The computer won! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
+        }
+        else {
+            alert("Game over. You tied!")
+        }
     }
 }
 
