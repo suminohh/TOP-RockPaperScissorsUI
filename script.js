@@ -9,13 +9,9 @@ function capitalize(playerPrompt) {
     return playerPrompt.charAt(0).toUpperCase() + playerPrompt.slice(1).toLowerCase();
 }
 
-//console.log(capitalize(playerSelection));
-//console is used to test whether function works as intended 
-
 function playRound(playerSelection, computerPlay) {
     const computerSelection = computerPlay();
-    let playerScore = 0;
-    let computerScore = 0;
+ 
     if ((playerSelection == 'Rock' && computerSelection == 'Scissors') || (playerSelection == 'Scissors' && computerSelection == 'Paper') || (playerSelection == 'Paper' && computerSelection == 'Rock')) {
         playerScore++;
         result = "You win! " + playerSelection + " beats " + computerSelection + ".";
@@ -30,11 +26,20 @@ function playRound(playerSelection, computerPlay) {
     alert(result);
 }
 
+let playerScore = 0;
+let computerScore = 0;
+var i = 0;
+
 function game() {
-    for(var i=0; i<5; i++) {
-        var playerPrompt = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
-        var playerSelection = capitalize(playerPrompt);
-        playRound(playerSelection, computerPlay);
+    var playerPrompt = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
+    var playerSelection = capitalize(playerPrompt);
+    playRound(playerSelection, computerPlay);
+    i++;
+    if (i !== 5) {
+        game();
+    } 
+    else {
+        alert("Game over! You scored " + playerScore + " and the computer scored " + computerScore + ".");
     }
 }
 
