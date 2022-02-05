@@ -1,6 +1,6 @@
 # TOP-RockPaperScissors
 
-Algorithm
+Pseudocode
 
 1. Create function for bot to randomly return 'Rock', 'Paper', or 'Scissors'
 
