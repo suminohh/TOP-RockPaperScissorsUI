@@ -1,8 +1,8 @@
 # TOP-RockPaperScissors
 
-I created a dialog box rock-paper-scissors game! 
-The instruction asked for console.log but for presentation purposes, I replaced it with alert(). 
-I wanted to make it accessible to folks who don't know about browser console
+I created a dialog box rock-paper-scissors game! <br/>
+The instruction asked for console.log but for presentation purposes, I replaced it with alert(). <br/>
+I wanted to make it accessible to folks who don't know about browser console. <br/>
 
 Check out the live preview here: 
 https://suminohh.github.io/TOP-RockPaperScissors/
