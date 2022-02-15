@@ -30,25 +30,25 @@ let playerScore = 0;
 let computerScore = 0;
 var i = 0;
 
-function game() {
-    var playerPrompt = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
-    var playerSelection = capitalize(playerPrompt);
-    playRound(playerSelection, computerPlay);
-    i++;
-    if (i !== 5) {
-        game();
-    } 
-    else {
-        if (playerScore > computerScore){
-            alert("Game over. You beat the computer! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
-        }
-        else if (playerScore < computerScore){
-            alert("Game over. Sorry mate. You lost. You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
-        }
-        else {
-            alert("Game over. You tied!");
-        }
-    }
-}
+// function game() {
+//     var playerPrompt = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
+//     var playerSelection = capitalize(playerPrompt);
+//     playRound(playerSelection, computerPlay);
+//     i++;
+//     if (i !== 5) {
+//         game();
+//     } 
+//     else {
+//         if (playerScore > computerScore){
+//             alert("Game over. You beat the computer! You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
+//         }
+//         else if (playerScore < computerScore){
+//             alert("Game over. Sorry mate. You lost. You scored " + playerScore + " point and the computer scored " + computerScore + " point.");
+//         }
+//         else {
+//             alert("Game over. You tied!");
+//         }
+//     }
+// }
 
 game();
