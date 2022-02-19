@@ -28,16 +28,27 @@ function playRound(playerSelection, computerPlay) {
     alert(result);
 }
 
-let playerScore = 0;
-let computerScore = 0;
-var i = 0;
-
 const handButtons = document.querySelectorAll('img');
 handButtons.addEventListener('click', playRound);
 
-var playerClick = document.getElementById()
+function playerSelection() {
+    if (document.getElementById('rock').click == true)
+    {
+        return Rock;
+    }
+    else if (document.getElementById('scissors').click ==  true)
+    {
+        return Scissors;
+    }
+    else if (document.getElementById('paper').click == true)
+    {
+        return Paper
+    }
+}
 
-  
+let playerScore = 0;
+let computerScore = 0;
+var i = 0;
   
 // function game() {
 //     var playerPrompt = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
@@ -60,4 +71,4 @@ var playerClick = document.getElementById()
 //     }
 // }
 
-game();
+//game();
