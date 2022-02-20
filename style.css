@@ -46,6 +46,7 @@ body {
 .question-img {
   width: auto;
   height: 300px;
+  object-fit: cover;
 }
 
 .hand-img {
