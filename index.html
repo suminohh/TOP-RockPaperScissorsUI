@@ -9,22 +9,39 @@
 </head>
 <body>
     <script src="script.js"></script>
+    <header class="header">
+        <h1 class="title">Rock Paper Scissors</h1>
+    </header>
     <div class="container">
-        <div class="round-play">
-
+        <div class="gameboard">
+            <div class="intro">
+                <h2 class="round-status" id="roundStatus">Click a hand to start playing</h2>
+                <h3 class="rule" id="rule">a game of five rounds</h3>
+            </div>
+            <div class="players-hand">
+                <div class="round-hand">
+                    <p class="score" id="player-score">Player: 0</p>
+                    <div class="background">
+                        <img src="./img/human-question.svg" class="question-img" id="question-mark" alt="Question mark">
+                    </div>
+                </div>
+                <div class="round-hand">
+                    <p class="score" id="computer-score">Computer: 0</p>
+                    <div class="background">
+                        <img src="./img/box-question.svg" class="question-img" id="question-mark" alt="Question mark">
+                    </div>
+                </div>
+            </div>
         </div>
-
         <div class="toggle">
-            <button id="hand-play">
-                <img src="./img/rock.png" id="rock" alt="A hand resembling a rock">
+            <button id="hand-btn">
+                <img src="./img/rock.png" class="hand-img" id="rock" alt="A hand resembling a rock">
             </button>
-
-            <button id="hand-play">
-                <img src="./img/paper.png" id="paper" alt="A hand resembling a piece of paper">
+            <button id="hand-btn">
+                <img src="./img/paper.png" class="hand-img" id="paper" alt="A hand resembling a piece of paper">
             </button>
-
-            <button id="hand-play">
-                <img src="./img/scissors.png" id="scissors" alt="A hand resembling a pair of scissors">
+            <button id="hand-btn">
+                <img src="./img/scissors.png" class="hand-img" id="scissors" alt="A hand resembling a pair of scissors">
             </button>
         </div>
     </div>
